@@ -3,7 +3,7 @@ from datetime import date, timedelta
 from docx import Document
 
 # List of storeman names
-storeman_names = ["Ruben", "Danial", "Khai", "Jude", "Afiq"]
+storeman_names = ["Storeman1"]
 
 
 # Function to generate the duty roster for the whole month with restrictions
@@ -35,7 +35,7 @@ def generate_duty_roster_with_restrictions(year, month, unavailable_dates):
 
 # Generate the duty roster for August 2023 with restrictions
 unavailable_dates = {
-    #date(2023, 8, 5): ["Ruben"],  # Ruben is unavailable on 05-08-2023
+    #date(2023, 8, 5): ["1"],  # 1 is unavailable on 05-08-2023
 }
 
 duty_roster = generate_duty_roster_with_restrictions(2023, 9, unavailable_dates)
